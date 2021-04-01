@@ -14,7 +14,8 @@ import org.testng.Assert;
 
 public class FirstTest {
 	
-	@Test(priority=2)
+	
+	@Test(priority=1)
 	public void login() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
@@ -40,7 +41,8 @@ public class FirstTest {
 		*/
 		driver.quit();
 	}
-		@Test(priority=1)  //enabled=false if needed
+		
+		@Test(priority=2)  //enabled=false if needed
 		public void register() {
 			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver();
